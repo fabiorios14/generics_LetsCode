@@ -4,8 +4,6 @@ Crie a classe MyOwnLists com um método asListedSorted estático. Este método d
 Este método deve retornar uma lista (List) de elementos do tipo T ordenados pela definição do Comparator.
 
 Permita que seja possível transformar qualquer array de um determinado tipo em uma lista de mesmo tipo de forma ordenada.
-
-Um exemplo de como seu método deverá ser chamado.
 */
 
 import java.util.ArrayList;
@@ -17,7 +15,7 @@ public class MyOwnLists {
     public static <T> List<T> asListedSorted(T[] lista, Comparator<T> comp) {
 
         List<T> listaOrdenada = new ArrayList<>();
-        for(int i=0; i<= 5;i++){
+        for(int i = 0; i < lista.length; i++){
             listaOrdenada.add(lista[i]);
         }
 
