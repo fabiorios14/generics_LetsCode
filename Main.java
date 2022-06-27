@@ -22,10 +22,10 @@ public class Main {
         nomes[3] = "Banco";
         nomes[4] = "do";
         nomes[5] = "Brasil";
-
         List<String> novoArrayList = MyOwnLists.asListedSorted(nomes, cmp);
         System.out.println(novoArrayList);
 
+        
         Integer[] numeros = new Integer[6];
         Comparator<Integer> cmp2 = Comparator.comparingInt(Integer::intValue);
         numeros[0] = 10;
@@ -34,11 +34,20 @@ public class Main {
         numeros[3] = 8;
         numeros[4] = 11;
         numeros[5] = 7;
- 
         List<Integer> novoArrayList2 = MyOwnLists.asListedSorted(numeros, cmp2);
         System.out.println(novoArrayList2);
 
-        
+
+        Empregados[] empregados = new Empregados[6];
+        Comparator<Empregados> cmp3 = Comparator.comparingInt(Empregados::getMatricula);
+        empregados[0] = new Empregados("Fabio", 20);
+        empregados[1] = new Empregados("Felipe", 18);
+        empregados[2] = new Empregados("Ana", 25);
+        empregados[3] = new Empregados("Joao", 12);
+        empregados[4] = new Empregados("Jose", 15);
+        empregados[5] = new Empregados("Maria", 10);
+        List<Empregados> novoArrayList3 = MyOwnLists.asListedSorted(empregados, cmp3);
+        System.out.println(novoArrayList3);
 
     }
 }
