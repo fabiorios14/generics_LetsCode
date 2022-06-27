@@ -8,8 +8,6 @@ Permita que seja possível transformar qualquer array de um determinado tipo em 
 Um exemplo de como seu método deverá ser chamado.
 */
 
-package aulaGenerics;
-
 import java.util.Comparator;
 import java.util.List;
 
